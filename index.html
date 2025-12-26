@@ -11,49 +11,58 @@
       href="./assets/images/favicon-32x32.png"
     />
 
+    <link rel="stylesheet" href="newsletter.css" />
+
     <title>
       Frontend Mentor | Newsletter sign-up form with success message
     </title>
   </head>
   <body>
-    <div class="first-section">
+    <div class="first-section" id="first-section">
       <img src="./assets/images/illustration-sign-up-mobile.svg" />
-      <h1>Stay updated!</h1>
 
-      <p>Join 60,000+ product managers receiving monthly updates on:</p>
+      <div class="first-section-chamber-1">
+        <h1>Stay updated!</h1>
 
-      <div>
-        <img src="./assets/images/icon-list.svg" />
-        <p>Product discovery and building what matters</p>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+
+        <div class="check">
+          <div class="check-1">
+            <img src="./assets/images/icon-list.svg" />
+            <p>Product discovery and building what matters</p>
+          </div>
+
+          <div class="check-2">
+            <img src="./assets/images/icon-list.svg" />
+            <p>Measuring to ensure updates are a success</p>
+          </div>
+
+          <div class="check-3">
+            <img src="./assets/images/icon-list.svg" />
+            <p>And much more!</p>
+          </div>
+        </div>
+
+        <div class="addressing">
+          <p>Email address</p>
+          <input type="email" placeholder="email@company.com" />
+        </div>
+
+        <button id="subscribe">Subscribe to monthly newsletter</button>
       </div>
-
-      <div>
-        <img src="./assets/images/icon-list.svg" />
-        <p>Measuring to ensure updates are a success</p>
-      </div>
-
-      <div>
-        <img src="./assets/images/icon-list.svg" />
-        <p>And much more!</p>
-      </div>
-
-      <p>Email address</p>
-      <input placeholder="email@company.com" />
-
-      <button>Subscribe to monthly newsletter</button>
     </div>
 
-    <div class="second-section">
+    <div class="second-section hidden" id="second-section">
       <img src="assets/images/icon-success.svg" />
 
       <h1>Thanks for subscribing!</h1>
 
       <p>
-        A confirmation email has been sent to ash@loremcompany.com. Please open
-        it and click the button inside to confirm your subscription.
+        A confirmation email has been sent to <span>ash@loremcompany.com</span>.
+        Please open it and click the button inside to confirm your subscription.
       </p>
 
-      <button>Dismiss message</button>
+      <button id="dismiss-button">Dismiss message</button>
     </div>
 
     <!-- Success message end -->
@@ -64,5 +73,7 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div>
+
+    <script src="newsletter.js"></script>
   </body>
 </html>
