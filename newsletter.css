@@ -135,7 +135,7 @@ button:hover {
     height: 100vh;
   }
   .first-section {
-    min-width: 40%;
+    min-width: 50%;
     height: 600px;
     display: flex;
     flex-direction: row;
