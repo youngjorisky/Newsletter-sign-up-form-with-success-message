@@ -19,7 +19,18 @@
   </head>
   <body>
     <div class="first-section" id="first-section">
-      <img src="./assets/images/illustration-sign-up-mobile.svg" />
+      <picture>
+        <source
+          media="(max-width: 380px)"
+          srcset="./assets/images/illustration-sign-up-mobile.svg"
+          alt="sign-up-img-mobile"
+        />
+
+        <img
+          src="./assets/images/illustration-sign-up-desktop.svg"
+          alt="sign-up-img-desktop"
+        />
+      </picture>
 
       <div class="first-section-chamber-1">
         <h1>Stay updated!</h1>
@@ -65,13 +76,11 @@
       <button id="dismiss-button">Dismiss message</button>
     </div>
 
-    <!-- Success message end -->
-
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="https://x.com/_youngjojo_">Jojo Young</a>.
     </div>
 
     <script src="newsletter.js"></script>

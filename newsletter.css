@@ -111,6 +111,13 @@ button {
   font-weight: 700;
   background-color: hsl(234, 29%, 20%);
   cursor: pointer;
+  transition: background 1s ease, transform 1s ease;
+  box-shadow: 0 8px 15px rgba(0, 56, 23, 0.5);
+}
+
+button:hover {
+  transform: scale(1.1);
+  background: linear-gradient(to right, #e52e71, #ff8a00);
 }
 
 .attribution {
@@ -119,4 +126,34 @@ button {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 600px) {
+  body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+  }
+  .first-section {
+    min-width: 50%;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    border-radius: 30px;
+    align-items: center;
+  }
+  .first-section picture {
+    order: 1;
+    justify-content: center;
+  }
+  .first-section picture img {
+    height: 100%;
+  }
+  .hidden {
+    display: none;
+  }
+  .second-section button {
+    margin-top: 25px;
+  }
 }
